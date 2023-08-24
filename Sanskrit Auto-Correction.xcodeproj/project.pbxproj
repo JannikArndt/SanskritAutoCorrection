@@ -11,6 +11,31 @@
 		DD406FDE2A95FA6C0036F277 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FDD2A95FA6C0036F277 /* ContentView.swift */; };
 		DD406FE02A95FA6D0036F277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD406FDF2A95FA6D0036F277 /* Assets.xcassets */; };
 		DD406FE42A95FA6D0036F277 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD406FE32A95FA6D0036F277 /* Preview Assets.xcassets */; };
+		DD406FEC2A975A400036F277 /* Asanas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FEB2A975A400036F277 /* Asanas.swift */; };
+		DD406FEE2A9760DC0036F277 /* Pranayama.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FED2A9760DC0036F277 /* Pranayama.swift */; };
+		DD406FF02A976EF20036F277 /* Hint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FEF2A976EF20036F277 /* Hint.swift */; };
+		DD406FF22A976FC70036F277 /* SanskritTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FF12A976FC70036F277 /* SanskritTerm.swift */; };
+		DD406FF42A977F2F0036F277 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FF32A977F2F0036F277 /* General.swift */; };
+		DD406FF62A97820E0036F277 /* Ashtanga.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FF52A97820E0036F277 /* Ashtanga.swift */; };
+		DD406FF82A9783E20036F277 /* Chakras.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FF72A9783E20036F277 /* Chakras.swift */; };
+		DD406FFA2A9784BC0036F277 /* Mantras.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FF92A9784BB0036F277 /* Mantras.swift */; };
+		DD406FFC2A9784CD0036F277 /* Dhyanas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FFB2A9784CD0036F277 /* Dhyanas.swift */; };
+		DD406FFE2A9785380036F277 /* Sutras.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FFD2A9785380036F277 /* Sutras.swift */; };
+		DD4070002A9788FB0036F277 /* Bhandas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD406FFF2A9788FB0036F277 /* Bhandas.swift */; };
+		DD4070022A9789090036F277 /* Mudras.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4070012A9789090036F277 /* Mudras.swift */; };
+		DD4070042A978BA70036F277 /* Nadis.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4070032A978BA70036F277 /* Nadis.swift */; };
+		DD4070062A978BE00036F277 /* Pranavayus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4070052A978BE00036F277 /* Pranavayus.swift */; };
+		DD4070082A978C240036F277 /* Kriya.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4070072A978C240036F277 /* Kriya.swift */; };
+		DD40700A2A978C3B0036F277 /* Pranas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4070092A978C3B0036F277 /* Pranas.swift */; };
+		DD40700C2A978CD70036F277 /* Pratyahara.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40700B2A978CD70036F277 /* Pratyahara.swift */; };
+		DD40700E2A978D200036F277 /* Koshas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40700D2A978D200036F277 /* Koshas.swift */; };
+		DD4070102A978D6C0036F277 /* YogaPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40700F2A978D6C0036F277 /* YogaPaths.swift */; };
+		DD4070122A978DB20036F277 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4070112A978DB20036F277 /* Styles.swift */; };
+		DD4070142A978DDF0036F277 /* Kleshas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4070132A978DDF0036F277 /* Kleshas.swift */; };
+		DD4070162A978DEA0036F277 /* Gunas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4070152A978DEA0036F277 /* Gunas.swift */; };
+		DD4070182A978E660036F277 /* Ayurveda.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4070172A978E660036F277 /* Ayurveda.swift */; };
+		DD40701A2A978ECF0036F277 /* Kumbhakas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4070192A978ECF0036F277 /* Kumbhakas.swift */; };
+		DD40701E2A9790980036F277 /* Kirtan.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD40701D2A9790980036F277 /* Kirtan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +45,31 @@
 		DD406FDF2A95FA6D0036F277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD406FE12A95FA6D0036F277 /* Sanskrit_Auto_Correction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sanskrit_Auto_Correction.entitlements; sourceTree = "<group>"; };
 		DD406FE32A95FA6D0036F277 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD406FEB2A975A400036F277 /* Asanas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asanas.swift; sourceTree = "<group>"; };
+		DD406FED2A9760DC0036F277 /* Pranayama.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pranayama.swift; sourceTree = "<group>"; };
+		DD406FEF2A976EF20036F277 /* Hint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hint.swift; sourceTree = "<group>"; };
+		DD406FF12A976FC70036F277 /* SanskritTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanskritTerm.swift; sourceTree = "<group>"; };
+		DD406FF32A977F2F0036F277 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		DD406FF52A97820E0036F277 /* Ashtanga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ashtanga.swift; sourceTree = "<group>"; };
+		DD406FF72A9783E20036F277 /* Chakras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chakras.swift; sourceTree = "<group>"; };
+		DD406FF92A9784BB0036F277 /* Mantras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mantras.swift; sourceTree = "<group>"; };
+		DD406FFB2A9784CD0036F277 /* Dhyanas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dhyanas.swift; sourceTree = "<group>"; };
+		DD406FFD2A9785380036F277 /* Sutras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sutras.swift; sourceTree = "<group>"; };
+		DD406FFF2A9788FB0036F277 /* Bhandas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bhandas.swift; sourceTree = "<group>"; };
+		DD4070012A9789090036F277 /* Mudras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mudras.swift; sourceTree = "<group>"; };
+		DD4070032A978BA70036F277 /* Nadis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nadis.swift; sourceTree = "<group>"; };
+		DD4070052A978BE00036F277 /* Pranavayus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pranavayus.swift; sourceTree = "<group>"; };
+		DD4070072A978C240036F277 /* Kriya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kriya.swift; sourceTree = "<group>"; };
+		DD4070092A978C3B0036F277 /* Pranas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pranas.swift; sourceTree = "<group>"; };
+		DD40700B2A978CD70036F277 /* Pratyahara.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pratyahara.swift; sourceTree = "<group>"; };
+		DD40700D2A978D200036F277 /* Koshas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koshas.swift; sourceTree = "<group>"; };
+		DD40700F2A978D6C0036F277 /* YogaPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaPaths.swift; sourceTree = "<group>"; };
+		DD4070112A978DB20036F277 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		DD4070132A978DDF0036F277 /* Kleshas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kleshas.swift; sourceTree = "<group>"; };
+		DD4070152A978DEA0036F277 /* Gunas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gunas.swift; sourceTree = "<group>"; };
+		DD4070172A978E660036F277 /* Ayurveda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ayurveda.swift; sourceTree = "<group>"; };
+		DD4070192A978ECF0036F277 /* Kumbhakas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kumbhakas.swift; sourceTree = "<group>"; };
+		DD40701D2A9790980036F277 /* Kirtan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kirtan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +102,13 @@
 		DD406FDA2A95FA6C0036F277 /* Sanskrit Auto-Correction */ = {
 			isa = PBXGroup;
 			children = (
+				DD406FEA2A975A330036F277 /* terms */,
 				DD406FDB2A95FA6C0036F277 /* Sanskrit_Auto_CorrectionApp.swift */,
 				DD406FDD2A95FA6C0036F277 /* ContentView.swift */,
 				DD406FDF2A95FA6D0036F277 /* Assets.xcassets */,
 				DD406FE12A95FA6D0036F277 /* Sanskrit_Auto_Correction.entitlements */,
 				DD406FE22A95FA6D0036F277 /* Preview Content */,
+				DD406FEF2A976EF20036F277 /* Hint.swift */,
 			);
 			path = "Sanskrit Auto-Correction";
 			sourceTree = "<group>";
@@ -67,6 +119,37 @@
 				DD406FE32A95FA6D0036F277 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD406FEA2A975A330036F277 /* terms */ = {
+			isa = PBXGroup;
+			children = (
+				DD406FEB2A975A400036F277 /* Asanas.swift */,
+				DD406FED2A9760DC0036F277 /* Pranayama.swift */,
+				DD406FF12A976FC70036F277 /* SanskritTerm.swift */,
+				DD406FF32A977F2F0036F277 /* General.swift */,
+				DD406FF52A97820E0036F277 /* Ashtanga.swift */,
+				DD406FF72A9783E20036F277 /* Chakras.swift */,
+				DD406FFB2A9784CD0036F277 /* Dhyanas.swift */,
+				DD406FFD2A9785380036F277 /* Sutras.swift */,
+				DD406FF92A9784BB0036F277 /* Mantras.swift */,
+				DD406FFF2A9788FB0036F277 /* Bhandas.swift */,
+				DD4070012A9789090036F277 /* Mudras.swift */,
+				DD4070032A978BA70036F277 /* Nadis.swift */,
+				DD4070052A978BE00036F277 /* Pranavayus.swift */,
+				DD4070072A978C240036F277 /* Kriya.swift */,
+				DD4070092A978C3B0036F277 /* Pranas.swift */,
+				DD40700B2A978CD70036F277 /* Pratyahara.swift */,
+				DD40700D2A978D200036F277 /* Koshas.swift */,
+				DD40700F2A978D6C0036F277 /* YogaPaths.swift */,
+				DD4070112A978DB20036F277 /* Styles.swift */,
+				DD4070132A978DDF0036F277 /* Kleshas.swift */,
+				DD4070152A978DEA0036F277 /* Gunas.swift */,
+				DD4070172A978E660036F277 /* Ayurveda.swift */,
+				DD4070192A978ECF0036F277 /* Kumbhakas.swift */,
+				DD40701D2A9790980036F277 /* Kirtan.swift */,
+			);
+			path = terms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +222,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD40700E2A978D200036F277 /* Koshas.swift in Sources */,
+				DD40700A2A978C3B0036F277 /* Pranas.swift in Sources */,
+				DD406FFA2A9784BC0036F277 /* Mantras.swift in Sources */,
+				DD4070142A978DDF0036F277 /* Kleshas.swift in Sources */,
+				DD40701E2A9790980036F277 /* Kirtan.swift in Sources */,
+				DD4070162A978DEA0036F277 /* Gunas.swift in Sources */,
+				DD406FFE2A9785380036F277 /* Sutras.swift in Sources */,
+				DD406FF62A97820E0036F277 /* Ashtanga.swift in Sources */,
+				DD4070182A978E660036F277 /* Ayurveda.swift in Sources */,
+				DD406FF02A976EF20036F277 /* Hint.swift in Sources */,
+				DD4070002A9788FB0036F277 /* Bhandas.swift in Sources */,
+				DD4070082A978C240036F277 /* Kriya.swift in Sources */,
+				DD4070062A978BE00036F277 /* Pranavayus.swift in Sources */,
+				DD4070102A978D6C0036F277 /* YogaPaths.swift in Sources */,
+				DD406FEE2A9760DC0036F277 /* Pranayama.swift in Sources */,
+				DD4070122A978DB20036F277 /* Styles.swift in Sources */,
+				DD40700C2A978CD70036F277 /* Pratyahara.swift in Sources */,
+				DD406FF42A977F2F0036F277 /* General.swift in Sources */,
+				DD406FF22A976FC70036F277 /* SanskritTerm.swift in Sources */,
 				DD406FDE2A95FA6C0036F277 /* ContentView.swift in Sources */,
+				DD4070042A978BA70036F277 /* Nadis.swift in Sources */,
+				DD406FFC2A9784CD0036F277 /* Dhyanas.swift in Sources */,
+				DD406FF82A9783E20036F277 /* Chakras.swift in Sources */,
 				DD406FDC2A95FA6C0036F277 /* Sanskrit_Auto_CorrectionApp.swift in Sources */,
+				DD4070022A9789090036F277 /* Mudras.swift in Sources */,
+				DD406FEC2A975A400036F277 /* Asanas.swift in Sources */,
+				DD40701A2A978ECF0036F277 /* Kumbhakas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +377,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sanskrit Auto-Correction";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -277,14 +386,13 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.jannikarndt.sankskritAutoCorrect.Sanskrit-Auto-Correction";
+				PRODUCT_BUNDLE_IDENTIFIER = de.jannikarndt.SankskritAutoCorrection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -307,6 +415,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sanskrit Auto-Correction";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -315,14 +424,13 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.jannikarndt.sankskritAutoCorrect.Sanskrit-Auto-Correction";
+				PRODUCT_BUNDLE_IDENTIFIER = de.jannikarndt.SankskritAutoCorrection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
