@@ -1,3 +1,5 @@
+![GitHub Social Image](GitHub%20Social%20Image.png)
+
 # Sanskrit Auto-Correction for iOS
 
 This app lets you add all the Sanskrit terms that a yoga teacher might need to the user dictionary of your iOS device.
