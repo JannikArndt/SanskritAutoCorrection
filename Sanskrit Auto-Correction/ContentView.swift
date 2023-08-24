@@ -112,16 +112,16 @@ struct TermListView: View {
                 Spacer()
 
                 if learnedWords == totalWords {
-                    Button("Remove all") { self.removeAll(termsToRemove: self.terms) }.buttonStyle(.bordered)
+                    Button("Remove all") { self.removeAllWords(termsToRemove: self.terms) }.buttonStyle(.bordered)
                 } else {
-                    Button("Add all") { self.addAll(termsToAdd: self.terms) }.buttonStyle(.bordered)
+                    Button("Add all") { self.addAllWords(termsToAdd: self.terms) }.buttonStyle(.bordered)
                 }
             }
 
             DisclosureGroup(isExpanded: self.$isExpanded) {
                 LazyVStack(alignment: .leading, spacing: 10) {
                     ForEach(self.terms, id: \.id) { word in
-                        TermView(word: word, useDiacritics: self.$useDiacritics, triggerUpdate: { self.updateCount = .init() })
+                        TermView(word: word, useDiacritics: self.$useDiacritics, addWords: self.addAllWords, removeWords: self.removeAllWords)
                     }
                 }
             } label: {
@@ -141,12 +141,22 @@ struct TermListView: View {
         .id(self.update)
     }
 
-    func addAll(termsToAdd: [any SanskritTerm]) {
+    func getWords(term: any SanskritTerm) -> [String] {
+        let termWithCorrectWriting = self.useDiacritics ? term.nameWithDiacritics : term.simpleName
+        let termInPlural = self.useDiacritics ? term.nameWithDiacriticsPlural : term.simpleNamePlural
+        let fullWords = [termWithCorrectWriting, termInPlural].compactMap { $0 }
+
+        let splitWords = (termWithCorrectWriting.split(separator: " ") + (termInPlural?.split(separator: " ") ?? [])).map { String($0) }
+
+        let allWords = fullWords + splitWords + (fullWords + splitWords).map { $0.lowercased() }
+        let uniqued = Array(Set(allWords))
+
+        return uniqued
+    }
+
+    func addAllWords(termsToAdd: [any SanskritTerm]) {
         for term in termsToAdd {
-            let termWithCorrectWriting = self.useDiacritics ? term.nameWithDiacritics : term.simpleName
-            let termInPlural = self.useDiacritics ? term.nameWithDiacriticsPlural : term.simpleNamePlural
-            let words = termWithCorrectWriting.split(separator: " ") + (termInPlural?.split(separator: " ") ?? [])
-            for word in words {
+            for word in self.getWords(term: term) {
                 UITextChecker.learnWord(String(word))
             }
         }
@@ -154,12 +164,9 @@ struct TermListView: View {
         self.update = .init()
     }
 
-    func removeAll(termsToRemove: [any SanskritTerm]) {
+    func removeAllWords(termsToRemove: [any SanskritTerm]) {
         for term in termsToRemove {
-            let termWithCorrectWriting = self.useDiacritics ? term.nameWithDiacritics : term.simpleName
-            let termInPlural = self.useDiacritics ? term.nameWithDiacriticsPlural : term.simpleNamePlural
-            let words = termWithCorrectWriting.split(separator: " ") + (termInPlural?.split(separator: " ") ?? [])
-            for word in words {
+            for word in self.getWords(term: term) {
                 UITextChecker.unlearnWord(String(word))
             }
         }
@@ -181,7 +188,8 @@ struct TermListView: View {
 struct TermView: View {
     let word: any SanskritTerm
     @Binding var useDiacritics: Bool
-    let triggerUpdate: () -> Void
+    let addWords: ([any SanskritTerm]) -> Void
+    let removeWords: ([any SanskritTerm]) -> Void
 
     @State private var update: UUID = .init()
 
@@ -192,34 +200,27 @@ struct TermView: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text(term).bold()
                 Text(self.word.english).font(.caption2)
-            }.frame(maxWidth: 250, alignment: .leading)
+            }
+            .frame(maxWidth: 250, alignment: .leading)
 
             if UITextChecker.hasLearnedWord(term) {
                 Image(systemName: "checkmark.circle")
                     .foregroundColor(.green)
 
                 Button("Remove") {
-                    let words = term.split(separator: " ")
-                    for word in words {
-                        UITextChecker.unlearnWord(String(word))
-                    }
+                    self.removeWords([self.word])
                     self.update = .init()
-                    self.triggerUpdate()
                 }
             } else {
                 Image(systemName: "circle.dotted")
                     .foregroundColor(.gray)
 
                 Button("Add") {
-                    let words = term.split(separator: " ")
-                    for word in words {
-                        UITextChecker.learnWord(String(word))
-                    }
-
+                    self.addWords([self.word])
                     self.update = .init()
-                    self.triggerUpdate()
                 }
             }
-        }.id(self.update)
+        }
+        .id(self.update)
     }
 }
