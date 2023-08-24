@@ -70,6 +70,7 @@
 		DD4070172A978E660036F277 /* Ayurveda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ayurveda.swift; sourceTree = "<group>"; };
 		DD4070192A978ECF0036F277 /* Kumbhakas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kumbhakas.swift; sourceTree = "<group>"; };
 		DD40701D2A9790980036F277 /* Kirtan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kirtan.swift; sourceTree = "<group>"; };
+		DD4070212A979FD30036F277 /* Sanskrit-Auto-Correction-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sanskrit-Auto-Correction-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 		DD406FDA2A95FA6C0036F277 /* Sanskrit Auto-Correction */ = {
 			isa = PBXGroup;
 			children = (
+				DD4070212A979FD30036F277 /* Sanskrit-Auto-Correction-Info.plist */,
 				DD406FEA2A975A330036F277 /* terms */,
 				DD406FDB2A95FA6C0036F277 /* Sanskrit_Auto_CorrectionApp.swift */,
 				DD406FDD2A95FA6C0036F277 /* ContentView.swift */,
@@ -371,12 +373,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Sanskrit Auto-Correction/Sanskrit_Auto_Correction.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Sanskrit Auto-Correction/Preview Content\"";
 				DEVELOPMENT_TEAM = 9MD9DV36EY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sanskrit-Auto-Correction-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sanskrit Auto-Correction";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -409,12 +412,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Sanskrit Auto-Correction/Sanskrit_Auto_Correction.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Sanskrit Auto-Correction/Preview Content\"";
 				DEVELOPMENT_TEAM = 9MD9DV36EY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sanskrit-Auto-Correction-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sanskrit Auto-Correction";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
